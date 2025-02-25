@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: unset;
+    padding: unset;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #263342;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.logo {
+    width: 13%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Thiết lập độ rộng của phần tìm kiếm là 60% */
+.search {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Đảm bảo input và button nằm cạnh nhau */
+.search form {
+    display: inline-block;
+    width: 80%;
+}
+
+.search input[type="text"] {
+    width: 120%;
+    /* Thiết lập input chiếm 80% phần tử form */
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive: điều chỉnh kích thước của phần tìm kiếm khi màn hình nhỏ hơn */
+
+.user-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.login,
+.cart {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cart,
+.login,
+span {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.cart a {
+    color: #fff;
+}
+
+.login a {
+    color: #fff;
+}
+
+.header-bottom {
+    border-bottom: 1px solid beige;
+    width: 100%;
+}
+
+.sidebar-content {
+    display: flex;
+    justify-content: center;
+}
+
+.title-menu {
+    position: relative;
+    width: calc(77% - 2px);
+    box-shadow: 0px 0px 10px 0px rgba(94, 92, 92, 0.3);
+    height: 100%;
+    padding: 10px;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 44px;
+    width: 70%;
+    box-shadow: 0px 0px 10px 0px rgba(51, 50, 50, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.link-list li:last-child {
+    border-bottom: none;
+}
+
+.item-submenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.item-submenu:hover {
+    background: #f3eeee;
+    border-left: 3px solid #263342;
+    background-color: #e7dbdb;
+}
+
+.item-submenu:hover a {
+    text-decoration: none;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+}
+
+.box-policy {
+    width: 100%;
+}
+
+.box-policy ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-policy-item {
+    display: flex;
+    align-items: center;
+}
+
+.box-icon img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+.slider {
+    margin-left: -40px;
+}
+
+.group-banner-item {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-category {
+    margin-top: 60px;
+}
+
+.banner-right-item {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.banner-right-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.list-item-category {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.cate-item-inner {
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cate-item-image {
+    width: 100%;
+}
+
+.cate-item-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-sales {
+    display: flex;
+}
+
+.title-sp {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ps-item-right {
+    display: flex;
+    gap: 10px;
+}
+
+.ps-item {
+    width: 20%;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ps-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.box-img-p {
+    width: 100%;
+    height: 200px;
+}
+
+.box-img-p img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.list-sp {
+    display: flex;
+    gap: 10px;
+}
+
+.explore {
+    width: 30%;
+    text-align: center;
+    padding: 7px 20px;
+    margin: 20px auto;
+}
+
+/* CSS ban đầu cho phần tử <a> trong .explore */
+.explore a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffffff;
+    /* Màu chữ trắng */
+    background-color: #007bff;
+    /* Màu nền ban đầu */
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.explore a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Bắt đầu từ vị trí ngoài màn hình bên trái */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Màu overlay (trong suốt) */
+    transition: left 0.3s ease;
+    /* Hiệu ứng chuyển đổi vị trí */
+}
+
+
+.explore a:hover::before {
+    left: 0;
+    /* Di chuyển overlay sang phải để hiển thị */
+}
+
+.explore a:hover {
+    background-color: #0056b3;
+    /* Màu nền mới khi hover */
+}
+
+.explore-nc {
+    width: 30%;
+    text-align: center;
+    padding: 7px 20px;
+    margin: 20px auto;
+}
+
+/* CSS ban đầu cho phần tử <a> trong .explore */
+.explore-nc a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffffff;
+    /* Màu chữ trắng */
+    background-color: #007bff;
+    /* Màu nền ban đầu */
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.explore-nc a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Bắt đầu từ vị trí ngoài màn hình bên trái */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Màu overlay (trong suốt) */
+    transition: left 0.3s ease;
+    /* Hiệu ứng chuyển đổi vị trí */
+}
+
+
+.explore-nc a:hover::before {
+    left: 0;
+    /* Di chuyển overlay sang phải để hiển thị */
+}
+
+.explore-nc a:hover {
+    background-color: #0056b3;
+    /* Màu nền mới khi hover */
+}
+
+.manufacturer-p {
+    padding-left: 2px;
+}
+
+.manufacturer-p h5 {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #b6b8bb;
+}
+
+.name-p {
+    padding-left: 2px;
+}
+
+.name-p h5 {
+    font-size: 15px;
+}
+
+.price {
+    display: flex;
+    padding: 0 2px;
+    justify-content: space-between;
+}
+
+.sale {
+    padding: 2px 5px;
+    background: red;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.add-to-cart a {
+    text-decoration: none;
+}
+
+.add-to-cart span {
+    padding-right: 10px;
+}
+
+.title-fc {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-box-blog {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list-cate {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.cate-item {
+    width: calc(100% / 7 - 2px);
+    border: 1px solid rgb(214, 208, 208);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.cate-item:hover {
+    box-shadow: 0px 0px 12px 0px rgba(90, 88, 88, 0.3);
+
+}
+
+.cate-item img {
+    object-fit: cover;
+}
+
+.cate-item h4 {
+    font-size: 15px;
+}
+
+.cate-item a {
+    width: 100%;
+}
+
+.box-nc {
+    display: flex;
+}
+
+.title-nc {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.banner-nc {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.banner-nc img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nc-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100%/ 5 - 4px);
+}
+
+.nc-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list-nc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.posts {
+    display: flex;
+    gap: 10px;
+}
+
+.main-posts {
+    width: 50%;
+}
+
+.posts-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.posts-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.list-posts-item-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.list-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-posts-item {
+    display: flex;
+    gap: 10px;
+}
+
+.list-posts-item-image {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.box-footer {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.social-item {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.ft-footer {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid gainsboro;
+}
